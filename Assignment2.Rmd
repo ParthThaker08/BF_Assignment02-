@@ -1,0 +1,43 @@
+---
+title: "Assignment 2"
+output: html_document
+date: "2023-09-23"
+---
+
+
+```{r} 
+
+
+library(readxl)
+
+#Creating a data frame for an excel file 
+df<- read_excel("Typical_Employee_Survey_Data.xlsx",col_names = FALSE)
+
+#Adding a column name to the table 
+colnames(df) <- c("P1","P2","P3","P4","P5","P6","P7","P8","P9","P10","P11")
+
+fivenum(df$P1) 
+fivenum(df$P2) 
+fivenum(df$P3)
+fivenum(df$P4) 
+fivenum(df$P5)
+fivenum(df$P6) 
+fivenum(df$P7) 
+fivenum(df$P8) 
+fivenum(df$P9)
+fivenum(df$P9) 
+fivenum(df$P10)
+
+str(df) 
+table(df$P1)
+
+
+
+
+
+
+
+
+
+
+```
