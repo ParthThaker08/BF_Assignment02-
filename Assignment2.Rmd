@@ -31,6 +31,34 @@ fivenum(df$P10)
 str(df) 
 table(df$P1)
 
+# converting to factors 
+
+df$P2<-as.factor(df$P2)
+df$P8<-as.factor(df$P8)
+
+# different plots 
+
+hist(df$P1)
+boxplot(df$P2)
+barplot(df$P3)
+barplot(df$P4)
+hist(df$P5)
+hist(df$P6)
+barplot(df$P7)
+boxplot(df$P8)
+boxplot(df$P9)
+pie(df$P10)
+barplot(df$P11)
+
+#scatter plots 
+
+plot(df$P2, df$P5)
+plot(df$P8, df$P6)
+plot(df$P3, df$P8)
+plot(df$P4, df$P11)
+plot(df$P7, df$P10)
+
+
 
 
 
